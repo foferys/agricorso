@@ -19,7 +19,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /agricorso.it/
+          server-dir: /www.agricorso.it/
           local-dir: ./
           protocol: ftp
           log-level: minimal
