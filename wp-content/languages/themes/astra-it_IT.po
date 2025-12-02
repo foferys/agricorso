@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Astra package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-01 14:49:59+0000\n"
+"PO-Revision-Date: 2025-12-02 11:05:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -169,6 +169,10 @@ msgstr "Modifica il file php.ini"
 #: inc/class-astra-memory-limit-notice.php:326
 msgid "Edit .htaccess file"
 msgstr "Modifica il file .htaccess"
+
+#: inc/class-astra-memory-limit-notice.php:162
+msgid "🔔 PHP Memory Limit Notice"
+msgstr "🔔 Avviso relativo al limite di memoria PHP"
 
 #: inc/lib/class-astra-nps-notice.php:116
 msgid "Love it"
@@ -1030,6 +1034,10 @@ msgstr "Vimeo"
 #: inc/customizer/configurations/builder/header/configs/primary-header.php:93
 msgid "It would not be effective if transparent header is enabled."
 msgstr "Potrebbe non funzionare se è stato abilitato l'header trasparente."
+
+#: inc/modules/posts-structures/customizer/class-astra-posts-single-structures-configs.php:1542
+msgid "Disable on Front Page?"
+msgstr "Disabilitare sulla home page?"
 
 #: inc/customizer/class-astra-customizer.php:1674
 #: inc/customizer/extend-custom-controls/build/index.js:1
@@ -6436,6 +6444,134 @@ msgstr "Orecchio che ascolta"
 msgid "Ear Deaf"
 msgstr "Orecchio sordo"
 
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1147
+msgid "E"
+msgstr "E"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1132
+msgid "Dyalog"
+msgstr "Dyalog"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:195
+msgid "Dungeons & Dragons"
+msgstr "Dungeons & Dragons"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1104
+msgid "Dumpster Fire"
+msgstr "Cassonetto incendiato"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1091
+msgid "Dumpster"
+msgstr "Cassonetto"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1077
+msgid "Dumbbell"
+msgstr "Manubrio"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1062
+msgid "Drupal Logo"
+msgstr "Logo Drupal"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1049
+msgid "Drumstick Bite"
+msgstr "Coscia di pollo con morso"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1036
+msgid "Drum Steelpan"
+msgstr "Tamburo Steelpan"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1023
+msgid "Drum"
+msgstr "Tamburo"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:1010
+msgid "Droplet Slash"
+msgstr "Goccia con una barra"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:995
+msgid "Droplet"
+msgstr "Goccia"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:924
+msgid "Dragon"
+msgstr "Drago"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:909
+msgid "Draft2digital"
+msgstr "Draft2digital"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:896
+msgid "Download"
+msgstr "Scarica"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:871
+msgid "Down Left And Up Right To Center"
+msgstr "Giù a sinistra e su a destra al centro"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:857
+msgid "Dove"
+msgstr "Colomba"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:842
+msgid "Door Open"
+msgstr "Porta aperta"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:827
+msgid "Door Closed"
+msgstr "Porta chiusa"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:800
+msgid "Dolly"
+msgstr "Carrello"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:786
+msgid "Dollar Sign"
+msgstr "Segno del dollaro"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:773
+msgid "Dog"
+msgstr "Cane"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:743
+msgid "DocHub"
+msgstr "DocHub"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:730
+msgid "Dna"
+msgstr "Dna"
+
+#: assets/svg/logo-svg-icons/icons-v6-0.php:4033
+msgid "Diner's Club Credit Card"
+msgstr "Carta di credito Diner's Club"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:614
+msgid "Dice Two"
+msgstr "Dado con il due"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:601
+msgid "Dice Three"
+msgstr "Dado con il tre"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:588
+msgid "Dice Six"
+msgstr "Dado con il sei"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:575
+msgid "Dice One"
+msgstr "Dado con l'uno"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:562
+msgid "Dice Four"
+msgstr "Dado con il quattro"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:548
+msgid "Dice Five"
+msgstr "Dado con il cinque"
+
+#: assets/svg/logo-svg-icons/icons-v6-1.php:466
+msgid "Diamond"
+msgstr "Diamante"
+
 #: inc/customizer/configurations/builder/header/configs/account.php:167
 msgid "Choose if you want to display Icon or Avatar with the Text selected Profile Type."
 msgstr "Scegli se desideri visualizzare l'icona o l'avatar con il profilo di tipo Testo selezionato."
@@ -6854,7 +6990,7 @@ msgstr "Cerca..."
 msgid "Search..."
 msgstr "Cerca..."
 
-#: inc/core/class-astra-enqueue-scripts.php:469
+#: inc/core/class-astra-enqueue-scripts.php:468
 msgid "No results found"
 msgstr "Nessun risultato trovato"
 
@@ -7739,11 +7875,11 @@ msgstr "Nascondi l'etichetta del totale del carrello"
 msgid "Select Cart Icon"
 msgstr "Seleziona l'icona del carrello"
 
-#: inc/core/class-astra-enqueue-scripts.php:419
+#: inc/core/class-astra-enqueue-scripts.php:418
 msgid "Minus Quantity"
 msgstr "Meno Quantità"
 
-#: inc/core/class-astra-enqueue-scripts.php:418
+#: inc/core/class-astra-enqueue-scripts.php:417
 msgid "Plus Quantity"
 msgstr "Più quantità"
 

@@ -1,0 +1,1488 @@
+/*
+Theme Name:   Agricorso
+Theme URI:    httc://example.com/
+Description:  Un tema figlio del classico tema Astra appositamente creato per Teatro Rendano
+Author:       Gianpiero Ferraro
+Author URI:   https://gianpieroferraro.it/
+Template:     astra
+Version:      1.4.9
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  astrachild
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+#ast-scroll-top {
+  background-color: #a41a1b;
+}
+
+:root{
+    --verde-col: #495421;
+    --verde-chia: #B3BB10;
+}
+.grayLink {
+  color: #bfbfbf;
+}
+.nascosto{
+  display: none;
+}
+#mouse-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: rgba(255, 217, 0, 0.045) 1px solid;
+  /* mix-blend-mode: difference; */
+  pointer-events: none;
+  z-index: 999;
+  transition: all 0.025s ease-in-out, left 0.025s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.spazioTondo {
+  background-color: #000;
+}
+
+.wpcf7-submit {
+  background-color: #fff !important;
+}
+
+/*bottone cookie*/
+#cmplz-manage-consent .cmplz-manage-consent {
+    right: initial;
+    bottom: -3px !important;
+    padding: 0 5px !important;
+    margin: 0;
+    height: 30px !important;
+    transition: all 0.4s ease;
+    max-width: 100px;
+}
+#cmplz-manage-consent .cmplz-manage-consent:hover {
+    color: green;
+    height: 35px !important;
+}
+.cmplz-btn{
+  font-size: 10px !important;
+}
+/* css che funziona insieme a codice js per animare il menu e i colori */
+  .ast-primary-header-bar {
+    background-color: transparent;
+    border-bottom: transparent;
+    /* box-shadow: 5px 5px 10px #d7d7d7, -5px -5px 10px #e9e9e9; */
+  }
+  .sub-menu li a{
+    color: #000 !important;
+  }
+  .white{
+    color: #fff !important;
+  }
+  .black{
+    color: #000 !important;
+  }
+  .site-title a {
+      text-decoration: none;
+  }
+  #ast-hf-menu-1 li a{
+    transition: all 0.4s ease;
+  }
+
+/*  */
+.menu-item:hover a{
+  color: #db0b0b !important;
+}
+.menu-item a{
+      line-height: 21px;
+}
+.menu-item{
+    padding: 10px 0;
+}
+.menu-item:hover a{
+  color: #db0b0b !important;
+}
+
+.frasechiara {
+     margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+
+/* audio howler */
+.audioSound {
+  border: #1b1d1f 1px solid;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: fit-content !important;
+  height: 100vh;
+  padding: 0 !important;  
+}
+
+.music-lines2 {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+  height: 40px;
+  transform: rotate(180deg);
+}
+.music-lines2:hover {
+    cursor: pointer;
+}
+.audio_cont {
+  height: fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    bottom: 140px;
+    left: 50px;
+}
+.audio{
+  color: #ffffff;
+  font-size: 75%;
+  align-items: center;
+}
+
+.line2 {
+    width: 5px;
+    height: 6px;
+    background-color: #ffffff;
+    /* animation: music-animation 0.8s infinite alternate; */
+    /* Modifica la durata e l'effetto dell'animazione */
+}
+.animate2 {
+    animation: music-animation 0.8s infinite alternate; 
+}
+
+.line2:nth-child(2) {
+    animation-delay: 0.1s;
+    height: 9px;
+    /* Aggiungi un ritardo alle linee successive per creare un effetto più interessante */
+}
+.line2:nth-child(3) {
+    animation-delay: 0.4s;
+    height: 12px;
+}
+.line2:nth-child(4) {
+    animation-delay: 0.6s;
+    height: 9px;
+}
+.line2:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+
+
+@keyframes music-animation {
+    0% {
+      height: 7px;
+      /* Altezza iniziale delle linee */
+    }
+
+    100% {
+      height: 16px;
+      /* Altezza finale delle linee */
+    }
+}
+
+/* menu navbar */
+.ast-mobile-header-content.content-align-flex-start {
+  text-align: right !important;
+  width: 20% !important;
+  position: absolute !important;
+  right: 0 !important;
+  font-size: 1.1rem !important;
+}
+.current-menu-item a{
+  color: #a41a1b !important;
+  font-weight: 500;
+}
+
+.main-navigation li {
+  margin-right: 50px;
+  text-align: right !important;
+  border-bottom: #eae8e8 1px solid;
+}
+
+@media (max-width: 768px) {
+  .ast-mobile-header-content.content-align-flex-start {
+      width: 80% !important;
+    
+  }
+
+}
+
+/* audio howler fine */
+
+
+/* cover */
+/* .wp-block-cover .wp-block-cover__image-background,.wp-block-cover video.wp-block-cover__video-background,.wp-block-cover-image .wp-block-cover__image-background,.wp-block-cover-image video.wp-block-cover__video-background {
+
+    height: fit-content !important;
+   
+} */
+/* cover */
+
+.sticky_col {
+  position: sticky !important;
+  top: 32px;
+  /* border-radius: 0 0 10px 10px; */
+  align-self: flex-start;
+  z-index: 90;
+  background-color: rgba(207, 200, 200, 0.457); /* leggermente trasparente */
+  backdrop-filter: blur(10px); /* sfocatura sul contenuto dietro */
+}
+.sticky_col div a{
+ color: #820303 !important;
+}
+
+.but-anchor {
+  width: 100% !important;
+}
+
+/* rimuove breadcrumb dalla sezione post singolo */
+header.entry-header.ast-no-title {
+    display: none;
+}
+
+/* togliere botdo a quote sotto cover */
+.wp-block-stackable-blockquote {border:  none;}
+
+/* animazione header */
+.site-header {
+  opacity: 1;
+  transition: all 0.5s ease-in-out, transform 0.5s ease-in-out;
+  background-color: transparent;
+}
+.fixedHeader {
+  position: fixed;
+  width: 100vw;
+  animation: fadeInDown 0.5s ease-in-out;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-logo-img img{
+  width: 120px !important;
+  max-width: 150px !important;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.altri_loghi img{
+      width: 10rem;
+  margin-right: 10px;
+}
+
+/* .page-template-sul-bergamotto .main-navigation li {
+  color: #000 !important;
+} */
+
+
+.homeCover {
+  min-height: auto !important;
+  height: 86vh !important;
+  /* height: 100vh !important; */
+  width: 100vw !important;
+}
+.motto{
+  font-weight: 400;
+  color: white;
+  font-size: 45px;
+  font-family: 'Satisfy', cursive !important;
+}
+.titoloHome {
+  font-weight: 600 !important;
+  line-height: 7rem !important;
+  line-break: loose !important;
+  text-align: center !important;
+  text-justify: auto !important;
+  color: white !important;
+  font-size: 111px !important;
+}
+.titoloHome span{
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8 8 3 / 38%);
+  z-index: 2;
+}
+
+
+/* ---------------*/
+.mobilePhotoscr {
+  width: 100vw;
+  overflow: scroll;
+  height: 100vh;
+  display: flex;
+}
+.mobilePhotoscr img{
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+/* ----------------- */
+
+
+
+.stk-block.stk-block-blockquote :is(.stk-container.stk-block-blockquote__content,.stk-inner-blocks) {
+    flex-direction:column !important;
+}
+
+
+.bloccoFotoVidContainer {
+  height: 84vh;
+}
+.bloccoFotoVid {
+  position:relative; height: 100%; 
+  width: 80%;  
+  height: 100%;
+  margin: 0 auto; 
+  border-radius: 130px;
+  overflow: hidden;
+}
+
+.bloccoFotoVid img{
+  width:100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+.testi {
+  position:absolute; 
+  bottom: 50px; 
+  left: 50px; 
+  display: flex; 
+  justify-content: center;
+  gap: 30px; 
+  color: #fff;
+  z-index: 99;
+}
+.testi span{
+  width: 30%;
+}
+.testi p{
+  width: 100%;
+}
+
+
+
+.contdettagli {display: flex; flex-wrap: wrap; justify-content: center; gap: 5%;}
+.colDettagli {display: flex; flex-direction: column; width: 25%;}
+.elemCont {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  margin: 5%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.elemCont:hover {border-radius: 30px;}
+.elemCont img{width: 100%;height: 100%;object-fit: cover;transition: all 0.2s ease;}
+.elemCont:hover img{scale: 1.2;}
+.elemCont h5{position: absolute; bottom: 10px; left: 10px; color: #fff; z-index: 4;}
+.elemCont p{position: absolute; bottom: 2px; left: 10px; color: #fff; z-index: 4;opacity: 0;font-size: 13px;}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(143, 143, 143, 0.189) 0%, rgba(45, 45, 45, 0.156) 40%, rgba(0, 0, 0, 0.558) 100%);
+  z-index: 2;
+}
+
+
+.pulsante a:hover {
+  background-color: rgb(227, 251, 16) !important;
+}
+
+.imgRecHome {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+.imgRecHome:hover {
+  transform: scale(1.1);
+}
+.bloccoRe {
+  padding-bottom: 25px !important;
+  padding-top: 0 !important;
+
+}
+
+
+.bloccoEnorme {
+  height: 1030px !important;
+}
+.bloccoEnorme .wp-block-column, .bloccoEnorme .bloccoImg{
+  height: 100%;
+}
+.bloccoEnorme a{
+  height: 700px !important;
+}
+.bloccoEnorme .bloccoImg img{
+  height: 112% !important;
+}
+.bloccoEnorme .bloccoImg div.wp-block-cover__inner-container{
+  position: absolute !important;
+    bottom: 68px !important;
+}
+
+
+
+
+
+
+.bloccoLeggenda {
+  padding-top: 0 !important;
+  padding-bottom: 25px !important;
+
+}
+
+
+.bloccoImg {
+  position: relative;
+}
+
+.bloccoImg:hover {
+  cursor: pointer;
+}
+.bloccoImg img,
+.bloccoImg span,
+.bloccoImg div p a,
+.bloccoImg div p{
+  transition: all 0.2s ease;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white !important;
+  font-size: 2rem;
+  background: #3d40315e;
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.testone p{
+
+  text-align: center !important; 
+  font-size: 1rem !important;
+  background: #2829225e !important;
+  color: rgb(255, 255, 255) !important;
+  background: none !important;
+  width: 100% !important;
+  text-align: none !important;
+  padding-left: 30px !important;
+  padding: 10px !important;
+  line-height: 20px !important;
+  
+
+}
+.imgfirma img{
+
+  background: none !important;
+
+}
+
+.testone p b {
+  font-weight: 600;
+  color:  rgb(255, 255, 255) !important;
+  text-decoration: none !important;
+}
+.bloccoImg div p{color: #ffffff !important;}
+
+.bloccoImg:hover img{
+  scale: 1.2;
+}
+.bloccoImg div.wp-block-cover__inner-container{
+  position: absolute !important;
+      bottom: 0 !important;
+}
+.bloccoImg div p a{
+  text-decoration: none !important;
+  transition: all;
+}
+
+.bloccoSocialhome {
+  display: flex;
+  gap: 213px;
+  justify-content: space-between;
+  align-items: center !important;
+}
+
+.biglietteria .wp-block-cover__inner-container p {
+  color: white !important;
+}
+
+.socials i{
+  font-size: 20px !important;
+}
+
+/* primo blocco immagine berg */
+.primoBlContainer {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  background: #c6c5bf57;
+  background: linear-gradient(180deg, #c6c5bf57 0%, #c6c5bf57 80%, rgba(255,255,255,1) 100%);
+}
+.bergimgCont {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 40px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.bergImgMask, .bergText {
+  height: 70vh;
+  width: 100%;
+}
+.bergImgMask .bg-video{
+  height: 100%;
+}
+.bg-video #primoblocco-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bergText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bergText  a {
+  color: #000;
+  text-decoration: none !important;
+}
+.bergText .dx-blc{
+  padding: 6rem;
+}
+.bergText p{
+  font-size: 16px;
+}
+
+.rendanoSpeciale ul li{
+  margin-bottom: 20px !important; 
+}
+
+/* primo blocco immagine berg */
+
+.entry-content {
+	max-width: 78vw;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.imgtitle{
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  z-index: 9;
+  width: 793px;
+  color: #fff;
+}
+.imgtitle h2 {
+  font-size: 80px;
+  color: #fff;
+  line-height: 5rem;
+}
+.imgtitle button {
+  background-color: #cfad4a;
+  color: #fff;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.imgtitle button:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+
+  .imgfirma img{
+
+    background: none !important;
+    top: -955% !important;
+
+  }
+
+
+  .bloccoEnorme {
+    height: 1178px !important;
+  }
+  
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .imgtitle h2 {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  .homeP {
+    width: 253px !important;
+  }
+  #titleStaccoGaller {
+    font-size: 58px !important;
+  }
+
+  .block-footer {
+    text-align: center;
+  }
+  div#map {
+    margin-top: 40px;
+  }
+  .header-menu-sidebar .nav-ul li:not([class*=block])>.wrap>a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .wp-block-cover__inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .viniParag {
+    width: 300px;
+  }
+  .imgtitle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+  }
+  .titoloHome {
+    font-weight: 900 !important;
+    line-height: 3rem !important;
+    font-size: 31px !important;
+  }
+  .titoloHome span{
+    letter-spacing: 0 !important;
+  }
+  .motto{
+    font-size: 24px;
+  }
+  .testoaccantofoto {
+    margin: 0 !important;
+  }
+  /*cover pagine*/
+  .wp-block-cover__text {
+    width: 90%;
+    
+  }
+  .wp-block-cover__text  p{
+    font-size: 40px !important;
+    
+  }
+  .ast-primary-header-bar {
+    background-color: white;
+  }
+}
+
+#logoCov {
+  height: 200px;
+}
+
+
+.bordiRound {
+  border-radius: 10px;
+}
+
+.boxSottoCover {
+  position: relative;
+}
+
+.unReFirstText {
+  width: 64%;
+  color: rgb(108, 107, 107) ;
+  font-weight: 700;
+}
+
+.boxImgRecepie {
+  width: 100%;
+  height: 250px;
+}
+.boxImgRecepie img{
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+
+/* SLIDER */
+.quattroFoto {
+  height: 200px;
+}
+.quattroFoto img{
+  object-fit: cover;
+}
+/* ------ */
+
+
+
+
+/* --carosello */
+.link_carousel {
+  text-align: left;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+}
+/* --carosello */
+
+/* preview articoli */
+.gb-block-post-grid-image{
+
+  /* height: 200px; */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.gb-post-grid-items article{
+
+  border: 1.5px solid #a41a1b;
+}
+.gb-block-post-grid-text {
+  padding: 10px;
+
+}
+
+.gb-block-post-grid-title a {
+  color: #ab0303 !important;
+}
+
+.gb-block-post-grid .gb-block-post-grid-image {
+  margin-bottom: 0;
+}
+
+
+.imgArtPrev {
+  height: 235px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.imgArtPrev a{
+  object-fit: cover;
+}
+.imgArtPrev img {
+  height: 100%;
+  object-fit: cover;
+}
+.contentArt button  {
+  background: none !important;
+  border: 2px solid rgb(187, 187, 6);
+  transition: all 0.6s ease-in-out;
+}
+.contentArt button a {
+  text-decoration: none !important;
+  color: rgb(187, 187, 6) !important;
+  transition: all 0.6s ease-in-out;
+}
+.contentArt button:hover  {
+  background: rgb(246, 246, 208) !important;
+  border: 2px solid transparent;
+
+}
+
+.contentArt button a:hover {
+  text-decoration: underline;
+}
+
+.artPrevCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%; 
+  flex-wrap: wrap;
+} 
+.article-preview {
+  width: 300px;
+  margin-bottom: 35px;
+}
+
+.link {
+  /* height: 30px; */
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.link-icon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: #f8f8ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease;
+}
+
+.icon:nth-child(2) {
+  transform: translate(-40px);
+}
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+
+
+
+footer p {
+  color: rgb(255, 255, 255) !important;
+  padding: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+footer p a, footer div a {
+  color: #ddd;
+  text-decoration: none !important;
+}
+
+footer p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+/*immagini blog */
+.wp-block-post-featured-image {
+  height: 400px;
+}
+.wp-block-post-featured-image img {
+  height: 100%;
+}
+
+
+
+/* 
+filetto-di-dentice-con-datterino-olive-capperi-e-timo */
+
+/* video ricette  */
+
+.entry-content p {
+  margin-bottom: 0;
+}
+.wp-block-list {
+  margin-top: 0 !important;
+}
+
+.single .site-content .ast-container {
+  max-width: 100% !important;
+  display: block;
+  padding: 0;
+}
+.articoloCover {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+h2.singlePostTitolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+#videoTitles {
+  margin: 0 auto;
+  width: 75vw;
+  text-align: center;
+  margin-top: 60px;
+}
+.videoYt {
+  width: 830px;
+  display: flex;
+  margin: 0 auto;
+}
+.videoYt iframe{
+  width: 100%;
+  height: 535px;
+}
+
+.articoloCover img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* crea elemento di opacità nero */
+.articoloCover::after {
+  content: "";
+  position: absolute;z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /*  Cambia l'opacità con 0.5 */
+  pointer-events: none; /* Assicura che l'overlay non interferisca con eventuali interazioni */
+}
+.articoloCover h2 {
+ z-index: 3;
+}
+.videoRicCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.videoRecCont {
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+}
+.videoRecCont img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+}
+.recipeH2 {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+.recipe {
+  width: 250px;
+}
+
+.navigation {
+  margin: 30px 47px;
+}
+
+
+/* video ricette  */
+
+/* .contRicettHome span{
+  opacity: ;
+} */
+
+
+
+#boxNatTrap {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: justify;
+}
+#boxNatTrap img{
+  max-width: 550px;
+  object-fit: cover;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover  {
+  background-color: #67ac0066 !important;
+}
+
+@media (max-width: 768px) {
+  #boxNatTrap {
+      display: block;
+  }
+  #boxNatTrap img{
+      width: 100%;
+      margin-bottom: 50px;
+  }
+  .wp-singular .wp-block-column {
+    padding: 0 !important;
+  }
+  
+}
+
+/* ////fotoscrollcont/////// */
+
+
+.fotoscrollcont {
+  position: relative;
+  padding-top: 130px;
+}
+
+.fotoRaces {
+	width:fit-content;
+  height: 80vh;
+	display:flex;
+	flex-wrap:nowrap;
+  position: relative;
+}
+.fotoScrl {
+  width: 85vw;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  margin: 0;
+}
+.fotoScrl img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ////fotoscrollcont/////// */
+
+
+/*  */
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: absolute;
+  top: 13%; left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  background-color: rgb(189, 206, 0);
+}
+
+.racesWrapper {
+  position: relative;
+	background:#F77737;
+  padding-top: 130px;
+}
+
+.races {
+	width:fit-content;
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+
+.races h2 {
+	font-size:20vw;
+	flex-shrink:0;
+	padding-right:0.3em;
+	padding-left:0.3em;
+	color:#cdcf4a;
+	
+	margin:0;	
+}
+.races div {
+	font-size:30vw;
+	flex-shrink:0;
+	padding-right:0.3em;
+	padding-left:0.3em;
+	margin:0;	
+}
+.socialCon {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.socialCon h3{
+  font-size: 16vw;
+  color: #fff;
+}
+.socialCon p{
+  font-size: 5vw;
+  color: #fff;
+
+}
+#instagram-gallery-feed-0 {
+  height: 600px !important;
+}
+
+.bordosocial {
+  border: 1px solid darkred; 
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+.stk-block-text__text br{
+  height: 1px !important;
+}
+.firmachiara {
+  width: 208px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .races div:last-of-type,
+.fbk{
+	background:#3b5998;
+}  */
+
+.lightBG {
+	background:#313143;
+}
+
+.space-20vh {
+	height:20vh;
+}
+
+.space-30vh {
+	height:30vh;
+}
+
+.space-50vh {
+	height:50vh;
+}
+
+.space-100vh {
+	height:100vh;
+}
+
+/*  */
+
+
+/* footer */
+footer {
+      background: #20445c;
+    color: white;
+}
+#footContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 50px 150px;
+}
+#footContainer div{
+font-size: 13px !important;
+}
+#footContainer i{
+  color: #ffffff !important;
+}
+#about {
+    width: 45%;
+  }
+.testilinkfoot {
+    
+  width: auto;
+  gap: 20px;
+}
+#company {
+    width: fit-content;
+    color: #ffffff !important;
+}
+#company a{
+    color: #ffffff !important;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    
+}
+.socialMedia a {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+
+.foot-fr{
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    background-image: url("./wp-content/uploads/2023/09/FOOTER.png");
+}
+
+
+.footCopy {
+  background-color: #20445c !important;
+}
+
+
+.wpcf7-form label {
+    color: #fff;
+}
+.wpcf7-form-control {
+    color: #ffffff !important;
+}
+
+#imgFoot {
+  display: flex;
+  gap: 4%;
+}
+#imgFoot .rendano{
+      width: 54rem;
+}
+#imgFoot .cosenza{
+  position: absolute;
+  bottom: -29%;
+}
+#imgFoot .ministero{
+  position: absolute;
+  bottom: -9%;
+}
+
+
+@media (max-width: 768px) {
+
+  #instagram-gallery-feed-0 {
+    height: fit-content;
+  }
+  .testi {
+    
+    gap: 0; 
+  }
+  .unReFirstText {
+    width: 95%;
+    text-align: justify;
+  }
+  .grayLink {
+    color: #444444;
+  }
+  .box-imgText {
+    width: 100%;
+    padding: 3rem;
+    text-align: justify;
+  }
+
+  .videoYt {
+    width: 100%;
+  }
+
+  #footContainer {
+    height: fit-content ;
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+  }
+  #about {
+      width: 100%;
+  }
+  #imgFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 123px;
+  }
+  #imgFoot img{
+    object-fit: contain;
+  }
+  .loghifoot {
+    width: 16rem !important;
+  }
+  .socialmedia2 p{
+    margin-bottom: 0;
+  }
+
+  /* primo blocco home */
+  .bergimgCont {
+    flex-direction: column;
+  }
+  .bergImgMask, .bergText {
+    height: 55vh;
+  }
+  
+  .bergText .dx-blc {
+     padding: 3rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bergText h6{
+    font-size: 9px !important;
+  }
+  .bergText h4{
+    font-size: 12px !important;
+  }
+  .bergText p{
+    font-size: 1.7vh;
+  }
+  
+  /* primo blocco home */
+
+  
+
+
+  .racesWrapper {
+    background:#fff;
+  }
+  .pin-spacer {
+    padding: 0 !important;
+    height: fit-content !important;
+  }
+  .racesWrapper {
+    max-height: fit-content !important;
+    height: fit-content !important;
+    padding: 0px !important;
+    display: block !important;
+    width: 100vw !important;
+  }
+  .races {
+    display: block;
+    transform: none !important;
+
+    width:100%;
+  }
+  .races div {
+    font-size:10vw;
+    flex-shrink:0;
+    padding-right:0.3em;
+    padding-left:none;
+    margin:0;	
+  }
+
+  .fotoRaces {
+    display: none;
+  }
+
+  .dx-blc  h6{
+    font-size: 13px;
+  }
+  .dx-blc  h4{
+    font-size: 18px;
+  }
+
+  /* feed social mobile */
+    .bloccoSocialhome {
+      gap: 20px;
+    }
+    
+    #instagram-gallery-feed-0 {
+      height: inherit !important;
+    }
+  /* ---- */
+  
+
+  .wp-block-spacer{height: 30px !important;}
+  
+
+  .unReTitolo {
+    font-size: 25px !important;
+  }
+
+
+  
+  .bloccoFotoVid {
+    width: 80%;
+    border-radius: 80px;
+  }
+
+  .testi {
+    flex-direction: column;
+  }
+  .testi p{
+    width: 15rem;
+    font-size: 10px;
+  }
+
+  .contdettagli {justify-content: center;flex-direction: column;}
+  .colDettagli {
+    width: 90%;
+  }
+  .bloccofotoviodeotesto {
+    height: fit-content !important;
+  }
+
+  .socialMedia {
+    display: none;
+  }
+  .socialmedia2 {
+    display: block !important;
+  }
+  .link-container div {
+    font-size: 10px;
+  }
+  .spazioLimone {
+    height: 180px !important;
+  }
+
+  #company {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
